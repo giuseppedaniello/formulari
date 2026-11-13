@@ -9,5 +9,5 @@
  *   formUrl: 'https://forms.gle/...'                 -> apre un modulo (Google Forms o simili); il testo viene copiato negli appunti
  */
 window.FORMULARI_CONFIG = {
-  feedback: { github: '', label: '', email: '', formUrl: '' }
+  feedback: { github: 'giuseppedaniello/formulari', label: 'suggerimento', email: '', formUrl: '' }
 };
