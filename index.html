@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="it" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulari</title>
+  <meta name="description" content="Formulario di matematica, fisica, sistemi e controlli, elettrotecnica ed elettronica per studenti di ingegneria: formule, definizioni, teoremi e figure.">
+  <meta name="theme-color" content="#0d6efd">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Formulari">
+  <meta property="og:description" content="Formule, definizioni, teoremi e figure per studenti di ingegneria. Matematica, fisica, sistemi, controlli, elettrotecnica, elettronica.">
+  <meta property="og:locale" content="it_IT">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="vendor/katex/katex.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar fixed-top bg-body-tertiary border-bottom" id="topbar">
+    <div class="container-fluid gap-2 flex-nowrap">
+      <button class="btn btn-outline-secondary d-lg-none" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <a class="navbar-brand fw-semibold mb-0" href="#/" aria-label="Formulari"><i class="bi bi-calculator me-1"></i><span class="d-none d-sm-inline">Formulari</span></a>
+      <div class="flex-grow-1 search-wrap">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search" type="search" class="form-control" autocomplete="off">
+        </div>
+      </div>
+      <div class="ms-auto d-flex gap-1 flex-nowrap">
+        <button id="btn-lang" class="btn btn-outline-secondary" type="button">EN</button>
+        <button id="btn-theme" class="btn btn-outline-secondary" type="button"><i class="bi bi-moon-stars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="layout">
+    <aside id="sidebar" class="offcanvas-lg offcanvas-start" tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title"><i class="bi bi-calculator me-1"></i>Formulari</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body"><nav id="nav" class="w-100"></nav></div>
+    </aside>
+    <main id="main" class="container-xxl py-4"></main>
+  </div>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendor/katex/katex.min.js"></script>
+
+  <!-- registro delle materie -->
+  <script src="js/registry.js"></script>
+  <script src="js/figs.js"></script>
+
+  <!-- ===== MATERIE: per aggiungerne una, crea il file in data/ e aggiungi qui la riga ===== -->
+  <script src="data/matematica-base.js"></script>
+  <script src="data/analisi1.js"></script>
+  <script src="data/controlli-automatici.js"></script>
+  <script src="data/elettrotecnica.js"></script>
+  <script src="data/geometria-piana.js"></script>
+  <script src="data/geometria-solida.js"></script>
+  <script src="data/analisi2.js"></script>
+  <script src="data/algebra-lineare.js"></script>
+  <script src="data/geometria-analitica.js"></script>
+  <script src="data/sistemi-dinamici.js"></script>
+  <script src="data/equazioni-differenziali.js"></script>
+  <script src="data/trasformate.js"></script>
+  <script src="data/probabilita.js"></script>
+  <script src="data/fisica.js"></script>
+  <script src="data/elettromagnetismo.js"></script>
+  <script src="data/elettronica.js"></script>
+  <script src="data/riferimenti.js"></script>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
